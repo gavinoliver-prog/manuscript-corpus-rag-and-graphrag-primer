@@ -1,0 +1,118 @@
+{
+  "query": "Which papers discuss gene fusion detection?",
+  "vector_only": {
+    "faithfulness_score": 1.0,
+    "faithfulness_summary": "All claims made in the answer are supported by the retrieved context.",
+    "claims": [
+      {
+        "claim": "\"SeekFusion - A Clinically Validated Fusion Transcript Detection Pipeline for PCR-Based Next-Generation Sequencing of RNA (2021)\" discusses RNA sequencing (RNA-Seq) assays for gene fusion detection.",
+        "supported": true
+      },
+      {
+        "claim": "The paper reviews several bioinformatics tools available for detecting gene fusions, including benchmarking studies of gene fusion identification tools.",
+        "supported": true
+      },
+      {
+        "claim": "This paper also compares the accuracy and sensitivity of tools such as SeekFusion, JAFFA, STAR-Fusion, and Tophat Fusion in detecting gene fusions.",
+        "supported": true
+      },
+      {
+        "claim": "\"Long-range Transcriptome Sequencing Reveals Cancer Cell Growth Regulatory Chimeric mRNA (2012)\" describes the FusionMiner software workflow for chimeric mRNA (gene fusion) detection.",
+        "supported": true
+      },
+      {
+        "claim": "It outlines the process of analyzing BLAST results, filtering, and classifying chimeric candidates.",
+        "supported": true
+      },
+      {
+        "claim": "\"A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)\" discusses fusion transcript detection in the context of diagnosing rare inherited diseases using RNA-Seq.",
+        "supported": true
+      },
+      {
+        "claim": "It states that fusion transcript analysis should be considered in any RNA-Seq analysis aimed at genetic diagnosis of undiagnosed rare inherited disease.",
+        "supported": true
+      },
+      {
+        "claim": "\"Computational Detection of Known Pathogenic Gene Fusions in a Normal Tissue Database and Implications for Genetic Disease Research (2020)\" references algorithms and studies related to fusion transcript detection, such as TopHat-Fusion.",
+        "supported": true
+      },
+      {
+        "claim": "It also includes benchmarking and evaluation of fusion detection methods.",
+        "supported": true
+      }
+    ]
+  },
+  "graph_augmented": {
+    "faithfulness_score": 1.0,
+    "faithfulness_summary": "The answer is fully supported by the provided context, accurately reflecting the contents of the relevant papers.",
+    "claims": [
+      {
+        "claim": "The paper 'A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)' systematically assesses the presence of gene-fusion transcripts in cases of germline disease.",
+        "supported": true
+      },
+      {
+        "claim": "The paper describes a tailored approach to fusion candidate identification and prioritization in a cohort of 47 undiagnosed, suspected inherited disease patients.",
+        "supported": true
+      },
+      {
+        "claim": "The paper discusses the detection of fusion candidates using TopHat Fusion.",
+        "supported": true
+      },
+      {
+        "claim": "The paper also discusses the modification of filtering steps for germline samples.",
+        "supported": true
+      },
+      {
+        "claim": "The paper describes a custom workflow for candidate categorization.",
+        "supported": true
+      },
+      {
+        "claim": "The paper includes experimental validation of selected candidates.",
+        "supported": true
+      },
+      {
+        "claim": "The paper 'SeekFusion - A Clinically Validated Fusion Transcript Detection Pipeline for PCR-Based Next-Generation Sequencing of RNA (2021)' reports on the performance of different fusion detection tools, including SeekFusion, JAFFA, STAR-Fusion, and TopHat Fusion.",
+        "supported": true
+      },
+      {
+        "claim": "The paper discusses tool accuracy, true positive rates, and false positive rates.",
+        "supported": true
+      },
+      {
+        "claim": "The paper describes the underlying principles and validation of the SeekFusion pipeline for gene fusion transcript detection in clinical samples.",
+        "supported": true
+      },
+      {
+        "claim": "The paper 'Long-range Transcriptome Sequencing Reveals Cancer Cell Growth Regulatory Chimeric mRNA (2012)' describes a workflow for chimeric mRNA detection.",
+        "supported": true
+      },
+      {
+        "claim": "The paper includes the development and use of FusionMiner software to identify candidate chimeras.",
+        "supported": true
+      },
+      {
+        "claim": "The paper involves validation with RT-PCR.",
+        "supported": true
+      },
+      {
+        "claim": "The source 'Computational Detection of Known Pathogenic Gene Fusions in a Normal Tissue Database and Implications for Genetic Disease Research (2020)' lists papers that present algorithms for the detection of gene fusions from RNA-seq data.",
+        "supported": true
+      },
+      {
+        "claim": "This source mentions algorithms such as TopHat-Fusion, deFuse, and comparative assessments of fusion transcript detection methods.",
+        "supported": true
+      },
+      {
+        "claim": "These papers collectively discuss gene fusion detection methodologies, applications, and bioinformatics tools.",
+        "supported": true
+      }
+    ],
+    "new_claims_vs_vector": [
+      "The 2019 paper systematically assesses the presence of gene-fusion transcripts in cases of germline disease and describes a tailored approach to fusion candidate identification and prioritization in a cohort of 47 undiagnosed, suspected inherited disease patients.",
+      "The 2019 paper details the detection of fusion candidates using TopHat Fusion, modification of filtering steps for germline samples, a custom workflow for candidate categorization, and experimental validation of selected candidates.",
+      "The 2021 paper discusses tool accuracy, true positive rates, false positive rates, and describes the underlying principles and validation of the SeekFusion pipeline for gene fusion transcript detection in clinical samples.",
+      "The 2012 paper involves validation with RT-PCR as part of the chimeric mRNA detection process."
+    ],
+    "delta_summary": "The graph expansion provided detailed methodological insights and specific contributions from each paper, enhancing the understanding of gene fusion detection."
+  }
+}

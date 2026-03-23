@@ -1,0 +1,110 @@
+chunk_id,paper_id,text,score
+Computational Detection of Known Pathogenic Gene Fusions in a Normal Tissue Database and Implications for Genetic Disease Research (2020)_chunk0076,Computational Detection of Known Pathogenic Gene Fusions in a Normal Tissue Database and Implications for Genetic Disease Research (2020),"(2011). TopHat-Fusion: an algorithm for discovery of novel fusion transcripts. _Genome Biol._ 12:R72. doi: 10.1186/gb-2011-12-8-r72 
+
+- Kremer, L. S., Bader, D. M., Mertes, C., Kopajtich, R., Pichler, G., Iuso, A., et al. (2017). Genetic diagnosis of Mendelian disorders via RNA sequencing. _Nat. Commun._ 8:15824. doi: 10.1038/ncomms15824 
+
+- Kumar, S., Vo, A. D., Qin, F. J., and Li, H. (2016). Comparative assessment of methods for the fusion transcripts detection from RNA-Seq data. _Sci. Rep._ 6:21597. doi: 10.1038/srep21597 
+
+- Lek, M., Karczewski, K. J., Minikel, E. V., Samocha, K. E., Banks, E., Fennell, T., et al. (2016). Analysis of protein-coding genetic variation in 60,706 humans. _Nature_ 536, 285–291. doi: 10.1038/nature19057 
+
+- Lupski, J. R., Reid, J. G., Gonzaga-Jauregui, C., Rio Deiros, D., Chen, D. C., Nazareth, L., et al. (2010). Whole-genome sequencing in a patient with 
+
+- charcot-marie-tooth neuropathy. _N. Engl. J. Med._ 362, 1181–1191. doi: 10.1056/ NEJMoa0908094 
+
+- Maes, B., Vanhentenrijk, V., Wlodarska, I., Cools, J., Peeters, B., Marynen, P., et al. (2001). The NPM-ALK and the ATIC-ALK fusion genes can be detected in nonneoplastic cells. _Am. J. Pathol._ 158, 2185–2193. doi: 10.1016/s0002-9440(10) 64690-1 
+
+- Ng, S. B., Turner, E. H., Robertson, P. D., Flygare, S. D., Bigham, A. W., Lee, C., et al. (2009). Targeted capture and massively parallel sequencing of 12 human exomes. _Nature_ 461, 272–276. doi: 10.1038/nature08250 
+
+- Oliver, G. R., Blackburn, P. R., Ellingson, M. S., Conboy, E., Pinto, E. V. F., Webley, M., et al. (2019a). RNA-Seq detects a SAMD12-EXT1 fusion transcript and leads to the discovery of an EXT1 deletion in a child with multiple osteochondromas. _Mol. Genet. Genomic Med._ 7:e00560.",0.59258294
+SeekFusion - A Clinically Validated Fusion Transcript Detection Pipeline for PCR-Based Next-Generation Sequencing of RNA (2021)_chunk0389,SeekFusion - A Clinically Validated Fusion Transcript Detection Pipeline for PCR-Based Next-Generation Sequencing of RNA (2021),"Intuitively if an algorithm consistently reports gene fusions with fewer reads supporting the event, a higher read cut-off will result in a lower accuracy and true positive rate. JAFFA hybrid was ranked second, followed by STAR-Fusion; however, both JAFFA and STAR-Fusion produced higher numbers of calls beyond the known fusion events. These calls were closely examined and are documented in Supplementary File S1. Manual curation was performed, and the extra calls were classified as false positives; all these calls were due to homology, low complexity, or identified with very low frequency (Supplementary Table S5). Tophat Fusion performed the worst, with a high rate of false negatives. SeekFusion was the only tool observed to be 100% concordant with the expected positive gene fusions whereas STAR-Fusion, JAFFA-Hybrid and TOPHAT-Fusion detected 83, 77 and 1% respectively. 
+
+## Levels of Read Support for Detected Fusions 
+
+The number of gene fusion-supporting reads detected by the four tools was assessed for the true positive gene fusions. Deduped and trimmed FASTQs were utilized in the analysis since only SeekFusion demonstrated the ability to successfully detect the true positive fusions from raw FASTQs. SeekFusion reported more gene fusion supporting reads than the other tools in 83% of cases (Figure 5). SeekFusion was followed by JAFFA, STARFusion and Tophat Fusion for the number of fusion supporting reads. 
+
+MAPE and SMAPE are widely used measures of forecast accuracy; they aid in assessing accuracy based on percentage errors from the actual. MAPE (de Myttenaere et al., 2016) and SMAPE (Tofallis, 2015) values indicate that SeekFusion performed the best in terms of observed to expected gene fusion-supporting reads amongst the four tools (Table 3). A Wilcoxon test (Wilcoxon, 1945) on the SMAPE values between SeekFusion and other tools supported the hypothesis that SeekFusion retrieved the highest proportion of known fusionsupporting reads in the in-silico samples (Table 3). Each tool considered has a different method of fusion transcript 
+
+Frontiers in Genetics | www.frontiersin.org 
+
+October 2021 | Volume 12 | Article 739054 
+
+8 
+
+SeekFusion Fusion Transcript Detection Pipeline 
+
+Balan et al. 
+
+**==> picture [465 x 407] intentionally omitted <==**
+
+FIGURE 4 | (A) Accuracy of the tools was assessed for the tools JAFFA, STAR-Fusion, Tophat Fusion and SeekFusion at varying read support thresholds. SeekFusion demonstrated highest accuracy in detecting the gene fusions at all levels of read support. The median accuracy of SeekFusion was 82% followed by JAFFAHybrid at 60%, STAR-Fusion at 39% and Tophat-Fusion at 20% for Mode1. SeekFusion was the only pipeline that demonstrated high accuracy in detecting fusions from raw FASTQs. (B) True Positive Rate of the tools was assessed for the tools JAFFA, STAR-Fusion, Tophat Fusion and SeekFusion at varying read support thresholds. SeekFusion demonstrated the highest sensitivity in detecting the gene fusions at all levels of read support.",0.56191933
+Long-range Transcriptome Sequencing Reveals Cancer Cell Growth Regulatory Chimeric mRNA (2012)_chunk0236,Long-range Transcriptome Sequencing Reveals Cancer Cell Growth Regulatory Chimeric mRNA (2012),"Bioinformatics 26, 1950–1957. 
+
+- [52] McPherson A, Hormozdiari F, Zayed A, Giuliany R, Ha G, Sun MG, Griffith M, Heravi Moussavi A, Senz J, Melnyk N, et al. (2011). deFuse: an algorithm for gene fusion discovery in tumor RNA-seq data. PLoS Comput Biol 7, e1001138. 
+
+- [53] Kinsella M, Harismendy O, Nakano M, Frazer KA, and Bafna V (2011). Sensitive gene fusion detection using ambiguously mapping RNA-Seq read pairs. Bioinformatics 27, 1068–1075. 
+
+- [54] Guerra E, Trerotola M, Aloisi AL, Tripaldi R, Vacca G, La Sorda R, Lattanzio R, Piantelli M, and Alberti S (2012). The Trop-2 signalling network in cancer growth. Oncogene. DOI: 10.1038/onc.2012.151 [E-pub ahead of print]. 
+
+- [55] Trerotola M, Cantanelli P, Guerra E, Tripaldi R, Aloisi AL, Bonasera V, Lattanzio R, de Lange R, Weidle UH, Piantelli M, et al. (2012). Upregulation of Trop-2 quantitatively stimulates human cancer growth. Oncogene. DOI: 10.1038/onc.2012.36 [E-pub ahead of print]. 
+
+1 
+
+## **SUPPLEMENTAL MATERIAL** 
+
+## **Long-range transcriptome sequencing reveals cancer cell growth regulatory chimeric mRNAs** 
+
+Roberto Plebani, Gavin R. Oliver, Marco Trerotola, Emanuela Guerra, Pamela Cantanelli, Luana Apicella, Andrew Emerson, Alessandro Albiero, Paul D. Harkin, Richard D. Kennedy and Saverio Alberti 
+
+Supplemental material includes: 
+
+**Supplemental Material and Methods** 
+
+**Supplemental Sequence Data** 
+
+**Supplemental Figures 1-4 Supplemental Tables 1-11 Supplemental References** 
+
+2 
+
+## **Supplemental Material and Methods** 
+
+**Chimeric mRNA detection procedure.** We designed the FusionMiner software workflow (Figure 1) to process BLAST analyses of query sequences against genomic databanks via sequential stages of analysis and exclusion, pass-or-fail tests. Candidate chimera were cross-validated versus experimentally verified sequences and by RT-PCR. 
+
+Alignments versus genomic assemblies were first parsed to remove spurious data on the basis of length and percent identity (=98%, over =95% of a candidate length). Individual filtered alignments were then clustered and concatenated across alignment breaks and intronic regions, based on a permissible gap criterion, to identify their genomic context. Sequences aligning to one or two chromosomes were segregated and processed separately, as intra-chromosomal (which most frequently derive from inter-genic transcription) and inter-chromosomal (which most frequently derive from chromosomal translocations and trans-splicing) chimeric candidates, respectively. 
+
+The fusion point (FP) for inter-chromosomal candidates was expected to correspond to the point in a clustered alignment where a sequence ceased to align with one chromosome and started to align with the second.",0.5453211
+SeekFusion - A Clinically Validated Fusion Transcript Detection Pipeline for PCR-Based Next-Generation Sequencing of RNA (2021)_chunk0379,SeekFusion - A Clinically Validated Fusion Transcript Detection Pipeline for PCR-Based Next-Generation Sequencing of RNA (2021),"RNA sequencing (RNA-Seq) assays for gene fusion detection provide improvements in throughput, sensitivity and specificity over traditional DNA and protein-based approaches like fluorescence in situ hybridization (FISH) and immunohistochemistry (IHC) (Wang et al., 2009; Abel et al., 2014; Moskalev et al., 2014; Pekar-Zlotin et al., 2015; Haynes et al., 2019). RNA-based strategies to detect gene fusions use transcriptome-wide sequencing with ribosomal RNA-depleted, fractionated messenger RNA or target specific genes of interest using polymerase chain reaction (PCR) based amplicon RNASeq, or bait hybridization (capture and ligation) using assays such as QIAGEN’s QIAseq RNAscan panel or Illumina’s SureSelect RNA capture (Wang et al., 2009; Blomquist et al., 2013; Drilon et al., 2015). The PCR-based amplicon RNA-Seq methods offer inexpensive and highly accurate sequencing of fusion transcripts, simultaneously assessing dozens to thousands of targets (Blomquist et al., 2013) and enabling detection of lowly expressed fusions at a high sequencing depth. While PCRbased approaches have traditionally been limited due to stochastic errors that propagate to all PCR cycles (Thilly, 1993), the addition of unique molecular indexes (UMI) in ligation adapters has recently been used to alleviate the impact of such errors (Kivioja et al., 2012), and can improve the sensitivity of gene fusion detection assays. QIAseq NGS assay panels have been demonstrated to provide robust correlation with RT-PCR and low PCR-bias (Wong et al., 2019), and so was the chemistry used in this study (see Methods, Library Preparation and Sequencing section). 
+
+Several bioinformatics tools are available for detecting gene fusions that use wide variety of approaches. Brian et al. and Trung et al. have each outlined benchmarking of 15 gene fusion identification tools in their studies and detailed the methods and performance (Vu et al., 2018; Haas et al., 2019). One common approach uses transcriptome-based spliced alignment. This method is reliant on the accurate mapping of short reads to the transcriptome, which can be challenging due to genome repetitiveness, sequence homology, incomplete transcriptome annotations, and novel patient sequences not well-represented by the reference genome. Matteo et al. elaborate on limitations of several gene fusion identification tools using short read alignment 
+
+technologies and report key factors such as read length, quality scores and number of reads supporting each fusion call (Carrara et al., 2013a). De-novo assembly-based approaches yield longer contigs from short reads and address some of the limitations of short-read alignment but are computationally intensive and often not scalable to large scale clinical testing (Carrara et al., 2013b; Davidson et al., 2015; Haas et al., 2019). Hybrid approaches such as the method implemented in JAFFA (Davidson et al., 2015) combine the approaches described above, but so far, no hybrid method achieves a balance of scalability and accuracy.",0.5449035
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0040,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"Since both diagnostic events identified in this study result from underlying genomic deletion or rearrangement, the question arises of whether whole-genome sequencing could detect them. Without further analysis, the possibility cannot be discounted. Whole-genome analysis nonetheless brings its own set of analytical and interpretive problems. DNA does not match the ability of RNA to measure transcriptional consequence [6], [5], [4] and has its own technical limitations that may cause failure to detect chromosomal DNA fusions [27]. We believe 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+15 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+that whole genome analyses will indubitably play a major role in the increased diagnosis of rare disorders as it spreads in use and its complexities are further unraveled, but ultimately DNA and RNA-based methods will serve as supplementary and parallel methodologies. 
+
+We focus primarily on DNA-Seq and RNA-Seq because they represent the most mature modern ‘omics’ technologies and the two that are being most widely applied in the rare disease domain. However, alternative approaches including those that integrate proteomic-based technologies also have the potential to detect aberrant fusion events. Throughput is currently higher with RNA-based methods, enabling more rapid, extensive and cost-effective profiling. Furthermore, fusion transcripts may or may not produce a protein product depending on their constitution. For example, an out-of-frame fusion leading to loss-of-function of two genes would not be expected to produce a protein. Thus RNA-Seq offers advantages of detectability beyond that of protein based assays, however proteomic and other approaches including diverse multi-omic assays will likely reveal their own benefits in the future as they become more accessible and their use becomes more ubiquitous. 
+
+While this study has focused on the detection of aberrant fusion transcripts, further diagnoses may yet be possible by expanding testing to include profiling of ASE, aberrant expression levels and splicing [6–8]. Indeed, we have previously published case studies where such events were diagnostic of rare disease [55]. Furthermore, variations of the analytical approach described herein may yield further events of interest. For example, the event category housing potential novel transcripts from single genes might contain abnormal exon combinations arising from intragenic deletions and these have potential for disease relevance. Ultimately however, each of these analyses is methodologically distinct and forms its own set of technical challenges. Their systematic application to this and further patient cohorts should undoubtedly form the basis of future work. 
+
+## **Conclusions** 
+
+We have reported the first successful systematic application of fusion transcript detection within a rare disease cohort. We have demonstrated an increased diagnostic rate and identified further novel candidates for phenotype causation. Fusion transcript analysis such as those described herein should be considered in any RNA-Seq analysis aimed at genetic diagnosis of undiagnosed rare inherited disease. 
+
+## **Supporting information** 
+
+**S1 Table. Demographic and phenotypic details of patient cohort.** (XLSX) 
+
+**S2 Table. Prior identified events of interest in the patient cohort and gene expression levels in normal tissue.** 
+
+(XLSX) 
+
+**S3 Table. Number of events in each categorization grouping for all patients.** (XLSX) 
+
+**S4 Table. All events categorized as fusion candidates prior to phenoytypic prioritization.** (XLSX) 
+
+**S5 Table. Extended description of all fusion events passing the phenotypic prioritization step.",0.5335657

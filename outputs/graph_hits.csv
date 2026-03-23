@@ -1,0 +1,236 @@
+chunk_id,paper_id,text,score,expansion_via
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0023,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"RNA-based profiling of genetic disease has traditionally occurred in targeted assays, with limited assessment of transcriptome-wide applications. Three recent studies reported on the utility of RNA-Seq as a complement to exome-based sequencing in inherited muscle pathologies [6], mitochondriopathies [7] and broad-spectrum rare disease [8]. Cummings _et al_ . studied aberrant splicing patterns and allele-specific expression (ASE), achieving a diagnostic improvement of 35%, while Kremer _et al_ . and Fresard _et al_ . evaluated splicing, ASE, and gene expression quantification, increasing diagnostic yields by 10% and 7.5% respectively. These studies concluded that RNA-Seq represents an essential component of the diagnostic toolkit for rare genetic disease testing. 
+
+One transcriptional phenomenon not considered by these previous studies is the expression of fusion transcripts. This is the occurrence whereby genetic material from mutually distinct genes is aberrantly conjoined and transcribed. It can occur by translocation, inversion, deletion, and duplication, potentially leading to gained, lost or altered gene function. Human gene-fusion transcripts are known to occur in hematological and solid tissue cancers where their oncogenic, diagnostic and therapeutic relevance are well-documented [9]. However, the systematic application of fusion transcript detection in germline genetic disease is absent from the literature. This is despite the fact that mechanisms commonly responsible for fusion transcript formation, including deletions, inversions and translocations, often underlie inherited conditions [10]. Indeed, case studies have reported fusion transcripts in disease including brain malformation [11] [12] [13], intellectual disability [14] [15] [16] [17] [18], schizophrenia [19] [20], spastic paraplegia [21], autism spectrum disorder [22], Gille de la Tourette 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+2 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+Syndrome [23] and more [24] [25] [10]. These sporadic cases suggest that the systematic inclusion of fusion transcript detection in RNA-based analysis of rare undiagnosed disease may lead to improved diagnostic rates. 
+
+Despite the availability of fusion-detection software, its practical application to transcriptome-wide rare disease studies in germline samples is challenging. Current solutions show limited agreement in the putative fusion candidates they output and none generate fully inclusive results. An appropriate fusion caller should be selected to match the data type under analysis. However, current tools were trained using cell line, tumor, or _in-silico_ datasets and are not applicable to germline data. Filters empirically derived from mismatched training data lead to low sensitivity when profiling unrelated sample types [26]. Another obstacle to fusion detection in germline samples is the abundance of false-positive findings arising from bioinformatics alignment artifacts, PCR artifacts, DNA fragments or unprocessed mRNA [27]. Equally, the potential remains for the detection of genuine mRNA species, commonly originating from currently unrecognized single genes, or more rarely, from trans-splicing mechanisms [27–31]. Furthermore, non-pathogenic constitutive fusions may be detected [32] [30], or fusions occurring transiently in subclonal cell populations [33]. Thus, any attempt to systematically apply fusion transcript detection in inherited disease studies using germline samples will require methods to detect meaningful fusion candidates and deprioritize phenotypically inconsequential results.",0.35402733,non-pathogenic constitutive fusions
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0024,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"Furthermore, non-pathogenic constitutive fusions may be detected [32] [30], or fusions occurring transiently in subclonal cell populations [33]. Thus, any attempt to systematically apply fusion transcript detection in inherited disease studies using germline samples will require methods to detect meaningful fusion candidates and deprioritize phenotypically inconsequential results. 
+
+Here, we describe the systematic application of fusion transcript detection to a cohort of 47 individuals with undiagnosed rare genetic disease. By applying a custom annotation and categorization process to fusion candidates, we demonstrate the presence of diagnostic fusion transcripts in a subset of patients. Our findings provide an analytical framework for others in the field and provide justification for the routine application of fusion transcript identification in genetic disease patients who eluded a diagnosis with existing assays. 
+
+## **Materials and methods** 
+
+## **Ethical compliance** 
+
+This study was approved by the Mayo Clinic institutional review board and all participants provided written informed consent for genetic testing. 
+
+## **Study subjects** 
+
+All patients were clinically referred to Mayo Clinic’s Center for Individualized Medicine, seeking genetic diagnosis of a suspected rare inherited disease. Patients and parents underwent genetic counselling and a full case history and family pedigree were constructed. Patients not fully diagnosed by exome sequencing were selected for whole-transcriptome RNA sequencing. 
+
+## **RNA-sequencing** 
+
+Sequencing was conducted on blood for 46 patients and cultured fibroblasts for 1 patient due to sample availability. Blood-derived RNA was obtained by collecting peripheral whole blood in PAXgene blood RNA tubes and using the QIAcube system (Qiagen) according to the manufacturer’s protocol for RNA extraction. RNA was isolated from fibroblasts as previously described [34]. 
+
+Sequencing libraries were prepared with either the TruSeq RNA Sample Prep Kit v2 or the TruSeq RNA Access Library Prep Kit (Illumina, San Diego, CA). Paired-end 101-basepair reads were sequenced on an Illumina HiSeq 2500 using the TruSeq Rapid SBS sequencing kit version 1 and HCS version 2.0.12.0 data collection software. A median of approximately 200 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+3 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+million reads was generated per individual. Base calling was performed using Illumina’s RTA version 1.17.21.3. 
+
+## **RNA fusion analysis** 
+
+Candidate fusion events were initially detected using TopHat Fusion (TopHat release 2.1.0) [35]. Minimal depth filtering was applied to candidate fusions. Each fusion candidate was required to be supported by a single split read pair (one read-pair member mapping across the breakpoint) and a single spanning read pair (one read-pair member mapped to each side of the breakpoint). Ultimately this enabled us to maintain a strategy that was more inclusive than the default filters (3 split, 2 supporting) while still requiring supporting evidence from both classes of fusion-defining read pairs. To further increase candidate inclusiveness in this germline dataset, we omitted the cancer-cell-line-derived TopHat Fusion post-processing filter steps (tophat-fusion-post) and began with the unprocessed fusion calls as input into a candidate categorization workflow. We performed sequence alignment to the human genome and transcriptome using BLASTN (v2.6.0) [36].",0.4903866,non-pathogenic constitutive fusions
+A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions (2025)_chunk0018,A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions (2025),"com/ dimi- lab/ PPAR. The validation data, which includes the DDD and MCRD cohort used in the model’s development, is publicly available and can be accessed at https:// github. com/ dimi- lab/ PPAR/ tree/ main/ data. The DDD cohort dataset used in this study was frozen on 7th November 2013 and is freely available as a supplementary file in https:// doi. org/ 10. 1016/ S0140- 6736(14) 61705-0 on behalf of the DDD study (https:// www. ddduk. org/). The MCRD cohort utilized in this study is an internally curated collection of rare disease patient data. Access to this data is regulated under Mayo Clinic Institutional Review Board #12–009346. 
+
+## **Declarations** 
+
+## **Ethics approval and consent to participate** 
+
+All the participants provided written informed consent to participate in this study. All protocols were approved by the Mayo Clinic Institutional Review Board. All methods were carried out in accordance with relevant guidelines and regulations. 
+
+## **Consent for publication** 
+
+Not applicable. 
+
+## **Competing interests** 
+
+The authors declare no competing interests. 
+
+Received: 31 October 2024   Accepted: 25 February 2025 
+
+**==> picture [133 x 12] intentionally omitted <==**
+
+Gnanaolivu _et al. BMC Bioinformatics           (2025) 26:82_ 
+
+Page 17 of 17 
+
+## **References** 
+
+1. Amberger J, Bocchini CA, Scott AF, Hamosh A. McKusick’s online Mendelian Inheritance in Man (OMIM). Nucleic Acids Res. 2009;37(Database issue):D793-6. 
+
+2. Ewans LJ, Minoche AE, Schofield D, Shrestha R, Puttick C, Zhu Y, et al. Whole exome and genome sequencing in mendelian disorders: a diagnostic and health economic analysis. Eur J Hum Genet. 2022;30(10):1121–31. 
+
+3. Clark MM, Stark Z, Farnaes L, Tan TY, White SM, Dimmock D, Kingsmore SF. Meta-analysis of the diagnostic and clinical utility of genome and exome sequencing and chromosomal microarray in children with suspected genetic diseases. NPJ Genom Med. 2018;3:16. 
+
+4. Helman G, Lajoie BR, Crawford J, Takanohashi A, Walkiewicz M, Dolzhenko E, et al. Genome sequencing in persistently unsolved white matter disorders. Ann Clin Transl Neurol. 2020;7(1):144–52. 
+
+5. Alfares A, Aloraini T, Subaie LA, Alissa A, Qudsi AA, Alahmad A, et al. Whole-genome sequencing offers additional but limited clinical utility compared with reanalysis of whole-exome sequencing. Genet Med. 2018;20(11):1328–33. 
+
+6. Wright CF, FitzPatrick DR, Firth HV. Paediatric genomics: diagnosing rare disease in children. Nat Rev Genet. 2018;19(5):253–68. 
+
+7.",0.12703565,exome sequencing
+A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions (2025)_chunk0019,A clinical knowledge graph-based framework to prioritize candidate genes for facilitating diagnosis of Mendelian diseases and rare genetic conditions (2025),"Whole-genome sequencing offers additional but limited clinical utility compared with reanalysis of whole-exome sequencing. Genet Med. 2018;20(11):1328–33. 
+
+6. Wright CF, FitzPatrick DR, Firth HV. Paediatric genomics: diagnosing rare disease in children. Nat Rev Genet. 2018;19(5):253–68. 
+
+7. Godard P, Page M. PCAN: phenotype consensus analysis to support disease-gene association. BMC Bioinformatics. 2016;17(1):518. 
+
+8. Yang H, Robinson PN, Wang K. Phenolyzer: phenotype-based prioritization of candidate genes for human diseases. Nat Methods. 2015;12(9):841–3. 
+
+9. Zhao M, Havrilla JM, Fang L, Chen Y, Peng J, Liu C, et al. Phen2Gene: rapid phenotype-driven gene prioritization for rare diseases. NAR Genom Bioinform. 2020;2(2):lqaa032. 
+
+10. Deelen P, van Dam S, Herkert JC, Karjalainen JM, Brugge H, Abbott KM, et al. Improving the diagnostic yield of exome- sequencing by predicting gene-phenotype associations using large-scale gene expression analysis. Nat Commun. 2019;10(1):2837. 
+
+11. Peng C, Dieck S, Schmid A, Ahmad A, Knaus A, Wenzel M, et al. CADA: phenotype-driven gene prioritization based on a case-enriched knowledge graph. NAR Genom Bioinform. 2021;3(3):lqa078. 
+
+12. Yuan X, Wang J, Dai B, Sun Y, Zhang K, Chen F, et al. Evaluation of phenotype-driven gene prioritization methods for Mendelian diseases. Brief Bioinform. 2022;23(2). 
+
+13. Landrum MJ, Lee JM, Benson M, Brown GR, Chao C, Chitipiralla S, et al. ClinVar: improving access to variant interpretations and supporting evidence. Nucleic Acids Res. 2018;46(D1):D1062–7. 
+
+14. Aymé S, Dallapiccola B, Donnai D. Orphanet journal of rare diseases: launch editorial. Orphanet J Rare Diseases. 2006;1(1):1. 
+
+15. Wright CF, Fitzgerald TW, Jones WD, Clayton S, McRae JF, van Kogelenberg M, et al. Genetic diagnosis of developmental disorders in the DDD study: a scalable analysis of genome-wide research data. Lancet. 2015;385(9975):1305–14. 
+
+16. Study TDDD. Large-scale discovery of novel genetic causes of developmental disorders. Nature. 2014;519(7542):223–8. 
+
+17. Chen H, Sultan SF, Tian Y, Chen M, Skiena S. Fast and accurate network embeddings via very sparse random projection. In: Proceedings of the 28th ACM international conference on information and knowledge management 2019. p. 399–408. 
+
+18.",0.21596551,exome sequencing
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0022,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"## **Background** 
+
+RNA sequencing has been proposed as a means of increasing diagnostic rates in studies of undiagnosed rare inherited disease. Recent studies have reported diagnostic improvements in the range of 7.5–35% by profiling splicing, gene expression quantification and allele specific expression. To-date however, no study has systematically assessed the presence of gene-fusion transcripts in cases of germline disease. Fusion transcripts are routinely identified in cancer studies and are increasingly recognized as having diagnostic, prognostic or therapeutic relevance. Isolated reports exist of fusion transcripts being detected in cases of developmental and neurological phenotypes, and thus, systematic application of fusion detection to germline conditions may further increase diagnostic rates. However, current fusion detection methods are unsuited to the investigation of germline disease due to performance biases arising from their development using tumor, cell-line or _in-silico_ data. 
+
+## **Methods** 
+
+We describe a tailored approach to fusion candidate identification and prioritization in a cohort of 47 undiagnosed, suspected inherited disease patients. We modify an existing fusion transcript detection algorithm by eliminating its cell line-derived filtering steps, and instead, prioritize candidates using a custom workflow that integrates genomic and transcriptomic sequence alignment, biological and technical annotations, customized categorization logic, and phenotypic prioritization. 
+
+## **Results** 
+
+We demonstrate that our approach to fusion transcript identification and prioritization detects genuine fusion events excluded by standard analyses and efficiently removes 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+1 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+**Competing interests:** The authors have declared that no competing interests exist. 
+
+phenotypically unimportant candidates and false positive events, resulting in a reduced candidate list enriched for events with potential phenotypic relevance. We describe the successful genetic resolution of two previously undiagnosed disease cases through the detection of pathogenic fusion transcripts. Furthermore, we report the experimental validation of five additional cases of fusion transcripts with potential phenotypic relevance. 
+
+## **Conclusions** 
+
+The approach we describe can be implemented to enable the detection of phenotypically relevant fusion transcripts in studies of rare inherited disease. Fusion transcript detection has the potential to increase diagnostic rates in rare inherited disease and should be included in RNA-based analytical pipelines aimed at genetic diagnosis. 
+
+## **Introduction** 
+
+The uptake of next-generation sequencing for clinical testing has brought about a surge in the diagnosis of rare genetic disease. Approximately 18–40% of cases originally escaping a diagnosis with traditional genetic assays are now solved by exome-based DNA sequencing [1–3]. Despite such advances, a clear need remains for novel and improved methods that will further increase diagnostic rates and improve patient care. While whole-genome sequencing will likely lead to higher diagnostic rates, it remains less cost effective than exome sequencing and significant advances in understanding are required before its non-coding data can be harnessed for clinical practice [4]. 
+
+Recently, RNA-Seq has been promoted as a versatile clinical tool capable of distilling diverse genetic variation into more readily interpretable transcriptional manifestations [5]. RNA-based profiling of genetic disease has traditionally occurred in targeted assays, with limited assessment of transcriptome-wide applications. Three recent studies reported on the utility of RNA-Seq as a complement to exome-based sequencing in inherited muscle pathologies [6], mitochondriopathies [7] and broad-spectrum rare disease [8]. Cummings _et al_ .",0.47731185,exome sequencing
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0027,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"Fusion transcripts were amplified from cDNA generated from patient RNA using the Invitrogen Super-Script II RT Kit (Cat. No. 18064022) with random hexamer primers. PCR was performed with primers detailed in S1 File using Bioline MiTaq Polymerase (Cat. No. BIO-25043). Reaction conditions included an annealing temperature of 55˚C for 30– 34 cycles. 
+
+Droplet Droplet digital PCR (ddPCR) was also performed for all fusion sequences selected for validation. gBlock constructs (Integrated DNA Technologies) were synthesized as positive controls. ddPCR primers and gBlock sequences are described in S2 File. ddPCR reactions contained 11 μL of ddPCR EvaGreen Supermix (Bio-Rad), 2.2 μL of primer mix (100nM final concentration of each primer) and 8.8 μL of cDNA. Separate reactions were assembled for each fusion candidate using a corresponding primer set. The QX-100 Droplet Generator (Bio-Rad) generated droplets with 20 μL of sample mix and 70 μL of QX200 droplet generation oil Droplets were transferred to a semi-skirted plate and sealed at 180˚C for 4 sec. Thermocycling conditions were as follows: enzyme activation at 95˚C for 5 min, 40 cycles of denaturation at 95˚C for 30 sec, annealing and extension at 60˚C for 1 min, and signal stabilization at 4˚C for 5 min and 90˚C for 5 min. Plates were measured on a QX200 Droplet Reader (Bio-Rad). 
+
+Further validation work was performed for select fusion events. Agilent 44k and 180k array comparative genome hybridization (aCGH), fluorescence in-situ hybridization (FISH), multiplex-ligation probe analysis (MLPA) and Molecular Inversion Probe (MIP) Analysis were 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+6 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+performed as previously described by Oliver _et al_ . [45]. Flow cytometry, long range PCR, Pacific Biosciences (PacBio) sequencing, targeted PCR and Sanger sequencing were performed as previously described by Cousin _et al_ . [34]. 
+
+## **Results** 
+
+## **Patient cohort** 
+
+RNA-Seq was performed on 47 patients with an incomplete diagnosis following prior testing, including exome sequencing. The cohort consisted of 23 males and 24 females. Ages at initial referral ranged from 9 months to 68 years with a mean age of 18 years and median of 11 years. Clinical presentations varied widely and comprised a spectrum of neurological, immune, muscular, gastrointestinal, connective tissue and skeletal disorders (S1 Table). 
+
+## **Genes of prior interest** 
+
+Of 47 cases, 19 had genes or variants of potential interest identified by exome sequencing and clinical review (S2 Table). Two patients had variants or genes considered to be of exceptionally high interest. Patient 6 carried a single pathogenic variant in _ATM_ with strong links to phenotype, but a second variant was required to fully explain the phenotype based on an autosomal recessive mode of inheritance.",0.38745883,exome sequencing
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0028,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"## **Genes of prior interest** 
+
+Of 47 cases, 19 had genes or variants of potential interest identified by exome sequencing and clinical review (S2 Table). Two patients had variants or genes considered to be of exceptionally high interest. Patient 6 carried a single pathogenic variant in _ATM_ with strong links to phenotype, but a second variant was required to fully explain the phenotype based on an autosomal recessive mode of inheritance. In patient 37, a pathogenic variant was actively sought in _EXT1_ or _EXT2_ . These genes of exceptionally high prior interest were determined to have expression levels suited to analysis in available tissue. Four further patients (Patients 21, 36, 42 and 44) carried variants with predicted pathogenicity and observed zygosity that was suspected to be fully explanatory of some element of their phenotype. It was theorized that fusion profiling for these patients might yield further phenotype-relevant events in other genes. The thirteen additional cases carried a selection of variants of unknown significance (VUS). Six of the thirteen patients carried a total of eight VUS in genes that displayed low expression ( _<_ 1 TPM in the GTEx [38] database) in whole blood, however, six of these showed correspondingly low expression in fibroblasts. Ultimately it was decided to proceed with sequencing of readily available blood samples for investigative purposes (S2 Table). The remaining 28 cases were unsolved and without candidates following exome sequencing, and were consequently included for exploratory analysis. 
+
+## **Fusion candidate classification workflow** 
+
+The fusion candidate selection workflow with the median number of candidates per category is shown in Fig 2. This workflow was designed to remove suspected artifacts or recurrent fusions and to classify remaining candidates into biologically meaningful categories. The median number of unfiltered fusion candidates entering the workflow was 31,138 per patient. The minimal read-depth filter removed a median of 27,824 likely spurious events per patient. Removal of putative fusions previously observed in normal samples further reduced candidates by a median of 2,553 per patient. Remaining filtering and categorization steps reduced fusion candidates by a median value of 97, achieving a tractable median of 12 events per patient which were classified as potential fusions and subjected to manual review for links to phenotype. The number of candidates categorized per patient at each stage is detailed in S3 Table while all candidates classified as potential fusions are included in S4 Table. A total of 16 fusion candidates in 13 patients (including 1 reciprocal event) passed phenotypic review, with potential links between genes and phenotype identified based on a combination of PCAN analysis and manual curation (Table 1). Extended descriptions and rationale for inclusion of fusion candidates passing manual review are provided in S5 Table. 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+7 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+**==> picture [533 x 349] intentionally omitted <==**
+
+**Fig 2. Fusion categorization workflow and median number of fusion candidates per category.** Unfiltered results from TopHat fusion were BLASTed, annotated and input into the candidate classification workflow. The median number of events per sample in each category is shown. All candidates classified as potential fusions or read-through events, proceeded into a final review stage that determined phenotypic relevance of the genes to the patient condition using both automated PCAN analysis and manual review.",0.19937417,exome sequencing
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0029,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"Fusion categorization workflow and median number of fusion candidates per category.** Unfiltered results from TopHat fusion were BLASTed, annotated and input into the candidate classification workflow. The median number of events per sample in each category is shown. All candidates classified as potential fusions or read-through events, proceeded into a final review stage that determined phenotypic relevance of the genes to the patient condition using both automated PCAN analysis and manual review. Candidates classified as most phenotypically relevant were selected for follow-up validation. 
+
+https://doi.org/10.1371/journal.pone.0223337.g002 
+
+## **Confirmation of fusion candidates** 
+
+Eleven candidate fusions with strong phenotypic relevance to the patient were selected for confirmation using orthogonal methods. Table 2 describes each of the fusions as well as the rationale for their selection and the status of their experimental confirmation. Eight fusions were successfully confirmed, with 2 clinically classified as diagnostic of the patients’ phenotype. Fusion confirmation images are included in S3 File. A selection of the confirmed fusion products are discussed in detail, as follows. 
+
+## **SAMD12-EXT1 fusion in a patient with multiple exostoses** 
+
+Patient 37 is a male child who presented with a phenotype including pachygyria, epilepsy, developmental delay, short stature, failure to thrive, facial dysmorphisms, and multiple exostoses [45]. Trio-based clinical exome sequencing identified a maternally inherited, X-linked lossof-function variant in Doublecortin ( _DCX_ ), which was classified as pathogenic and diagnostic of the patient’s neurological phenotype. However, the cause of the patient’s multiple exostoses remained unknown. Hereditary multiple exostoses is an autosomal dominant disorder, caused 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+8 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+**Table 1. Technical details of 16 fusion candidiates passing phenotypic review.** 
+
+|**Patient**<br>**ID**|**Fusion**|**Supporting vs**<br>**Non-**<br>**Supporting**<br>**Reads**|**Fused at Exon**<br>**boundaries?**|**Fusion**<br>**preserves**<br>**reading**<br>**frame?**|**Inter/**<br>**Intrachromosomal**|**Genomic coordinates (hg19)**|**Separation on**<br>**chromosome**<br>**(bp)**|**Transcripts**|**Strand**|**Detected by**<br>**Standard**<br>**TopHat Fusion**<br>**Filters?**|
+|---|---|---|---|---|---|---|---|---|---|---|
+|Patient<br>3|_ABCC2-CUTC_|10 vs 18|Exon-Exon|Yes|Intrachromosomal|chr10:101554225-chr10:101515382|38843|NM_000392 Exon 6—<br>NM_015960 Exon 9|Forward–<br>Forward|No|
+|Patient<br>5|_NARS2-TENM4_|23 vs",0.4863277,exome sequencing
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0032,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"Only one fusion candidate was detected by the standard Tophat Fusion filter settings. 
+
+https://doi.org/10.1371/journal.pone.0223337.t001 
+
+by pathogenic variants in _EXT1_ or _EXT2_ in 70–95% of cases, with _EXT1_ affected twice as frequently as _EXT2_ [46] [47]. Mosaic pathogenic events have been reported in numerous instances [48] [49]. No variant was identified in either gene despite extensive clinical testing, including array comparative genome hybridization (aCGH), metaphase karyotyping, multiplex ligation-dependent probe amplification (MLPA) and exome sequencing. RNA-Seq and subsequent fusion analysis discovered a candidate intrachromosomal fusion between _SAMD12_ and _EXT1_ (Fig 3A). The fusion was observed at the 3’ boundary of _SAMD12_ exon 2 and the 5’ boundary of _EXT1_ exon 2 forming a transcript predicted to be out-of-frame, leading to lossof-function. The fusion was supported by 17 sequence reads and was not identified in our normal control database. _SAMD12_ lies upstream of _EXT1_ on Chromosome 8 and both genes are oriented on the reverse chromosomal strand. Intuitively, the fusion transcript could be expected to result from a rare interstitial deletion of genomic sequence between the two genes, however, prior clinical testing did not report this. The clinical aCGH results were re-inspected for evidence of a deletion in this region and a 604 kb genomic region intervening the fused exons (chr8:118960168–119569348) showed evidence of mosaic loss of _EXT1_ exon 1 and _SAMD12_ exons 3–5, but did not meet clinical-reporting thresholds. The mosaic loss was subsequently confirmed by an increased density aCGH (S2 Fig), MIP analysis (S3 Fig), PCR and 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+9 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+**Table 2. Validation status and phenotypic justiifcation for the 11 fusion candidates selected for validation.** 
+
+|**Patient**<br>**ID**|**Fusion**|**Reason for interest?**|**Flagged by**|**Experimental**<br>**Validation**|
+|---|---|---|---|---|
+|Patient<br>5|_NARS2-TENM4_|Patient was referred due to<br>epilepsy phenotype. NARS2<br>mutations are responsible for<br>combined oxidative<br>phospohorylation deficiency<br>with symptoms including<br>epilepsy.",0.40317714,exome sequencing
+A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019)_chunk0036,A tailored approach to fusion transcript identification increases diagnosis of rare inherited disease (2019),"Despite clinical aCGH and MLPA results initially indicating no deletion affecting the putatively conjoined genes, reevaluation of clinical aCGH results appeared suggestive of a mosaic deletion of approximately 604 kb at chr8:118960168–119569348. The deletion was subsequently validated by several orthogonal methods and determined to be diagnostic of the multiple exostoses phenotype. The _SAMD12-EXT1_ fusion was not detected by standard TopHat filters. 3B) Reciprocal _ATM-SLC35F2_ and _SLC35F2-ATM_ fusions detected in Patient 6, with a severe combined immunodeficiency phenotype. The patient carried a paternally inherited pathogenic _ATM_ variant 
+
+PLOS ONE | https://doi.org/10.1371/journal.pone.0223337 October 2, 2019 
+
+12 / 21 
+
+Fusion transcripts diagnose inherited disease 
+
+for which a second hit was sought due to the autosomal recessive nature of _ATM_ mutations. RNA-Seq revealed reciprocal fusions that were expected to retain their protein-coding potential but lead to aberrant _ATM_ function based on the results of a novel flow cytometry assay. The fusions were experimentally validated by several orthogonal methods and shown to be maternally inherited, equating to compound heterozygous loss of _ATM_ function which was classified as diagnostic of the patient phenotype. These reciprocal fusions were the only members of our validation panel that were detected by standard TopHat filters. https://doi.org/10.1371/journal.pone.0223337.g003 
+
+## **Reciprocal ATM-SLC35F2 fusion in a patient with severe combined immunodeficiency** 
+
+Patient 6 is a female infant diagnosed with T cell lymphopenia by newborn screening for severe combined immunodeficiency (SCID) [34]. SCID gene panel sequencing was uninformative and aCGH unrevealing. Subsequent trio-based exome sequencing discovered a paternally inherited frameshift INDEL in _ATM_ , clinically classified as pathogenic. Pathogenic _ATM_ variation causes Ataxia-telangiectasia in an autosomal recessive manner, and would account for the patient’s phenotype if a second variant was in _trans_ . Flow cytometry assay revealed impaired phosphorylation of ATM, supporting the presence of a second pathogenic variant [34]. RNA sequencing of patient fibroblasts revealed reciprocal _ATM-SLC35F2_ and _SLC35F2-ATM_ fusion transcripts (Fig 3B). These fusions were supported by 14 and 43 reads respectively, and neither was identified in our normal control database. The _ATM-SLC35F2_ fusion consists of _ATM_ exon 16 joined to _SLC35F2_ exon 8, while the _SLC35F2-ATM_ fusion consists of _SLC35F2_ exon 7 joined to _ATM_ exon 17. Both resulting fusions were predicted to be in-frame, with each gene fragment in its correct orientation, despite the two genes existing natively on opposing genomic strands on Chromosome 11q22.3. It was hypothesized that the reciprocal fusion transcripts were the result of a chromosomal inversion. To confirm the hypothesis, long range PCR of the putatively affected introns was conducted and sequenced using PacBio long-read technology (S6 Fig).",0.33266568,exome sequencing

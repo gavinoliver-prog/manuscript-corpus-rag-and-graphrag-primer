@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Editor backups
+*~
+
+# Python environments
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+r/renv/library/
+
+# Quarto
+.quarto/
+
+# Logs
+*.log
