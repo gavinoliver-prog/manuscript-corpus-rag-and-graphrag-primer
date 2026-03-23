@@ -30,3 +30,6 @@ r/renv/library/
 
 # Logs
 *.log
+
+# Env
+.env
