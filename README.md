@@ -2,7 +2,7 @@
 
 This repo contains a notebook demonstrating a Graph-Augmented Retrieval-Augmented Generation (GraphRAG) pipeline applied to a corpus of (my) scientific papers in precision oncology and rare disease genomics.
 
-It is designed as an educational resource. By desing, every data transformation is made visible, every package choice is explained, and prompt engineering decisions are included as tutorial content.
+It is designed as an educational resource. By design, every data transformation is made visible, every package choice is explained, and prompt engineering decisions are included as tutorial content.
 
 ## The Problem
 
