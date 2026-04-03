@@ -1,16 +1,16 @@
-# Scientific RAG from PDFs: A Transparent, Package-Native Walkthrough
+# Scientific RAG from PDFs: A Package-Native Practical Primer
 
-This repository contains a notebook demonstrating a **Graph-Augmented Retrieval-Augmented Generation (GraphRAG)** pipeline applied to a corpus of scientific papers in precision oncology and rare disease genomics.
+This repo contains a notebook demonstrating a Graph-Augmented Retrieval-Augmented Generation (GraphRAG) pipeline applied to a corpus of (my) scientific papers in precision oncology and rare disease genomics.
 
-It is designed as an educational resource. Every data transformation is made visible, every package choice is explained, and prompt engineering decisions are treated as first-class tutorial content.
+It is designed as an educational resource. By desing, every data transformation is made visible, every package choice is explained, and prompt engineering decisions are included as tutorial content.
 
 ## The Problem
 
-Scientific literature in precision oncology and rare disease genomics grows faster than any researcher can read. Key findings about fusion transcript detection, gene–disease associations, and computational methods are scattered across dozens of papers. This pipeline offers a principled way to:
+Scientific literature grows faster than it can be consumed by even the determined reader. Key findings relevant to one's field are scattered across hundreds or thousands of papers. Beyond its role as a tutorial, this pipeline offers a proof-of-principle for:
 
-- **Search by meaning** (not just keywords) across a personal publication corpus
-- **Ground LLM answers** in retrieved evidence, reducing hallucination
-- **Build a knowledge graph** from the full corpus and use it to expand retrieval beyond what vector similarity alone finds
+- Searching by meaning (not just keywords) across a publication corpus
+- Grounding LLM answers in retrieved evidence, reducing hallucination
+- Building a knowledge graph from the full corpus and use it to expand retrieval beyond what vector similarity alone finds
 
 ## Repository Structure
 
@@ -34,11 +34,11 @@ manuscript-corpus-rag-and-graphrag-primer/
 └── README.md
 ```
 
-Intermediate artifacts are cached to `outputs/` so expensive steps (embedding, triplet extraction, normalisation) are skipped on re-runs.
+Intermediate artifacts are cached to `outputs/` so that expensive steps (embedding, triplet extraction, normalisation) are skipped on re-runs.
 
 ## Environment Setup
 
-This project uses **uv** for environment management.
+This project uses uv for environment management.
 
 ### Install Python if needed
 
@@ -185,7 +185,3 @@ This notebook prioritises clarity and educational value over production robustne
 - Graph database backend (Neo4j)
 - Community detection for topic clustering
 - Streaming answers for interactive use
-
-## License
-
-Provided for research and educational purposes.
